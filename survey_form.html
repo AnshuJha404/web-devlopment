@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+       body{
+          font-family: 'Times New Roman', Times, serif;
+          background-color: aqua;
+          text-align: center;
+       }
+       form{
+        background-color: blueviolet;
+        box-shadow: 2px 5px 10px rgba(0,0,0,0,0.5);
+        max-width: 500px;
+        margin : 50px auto;
+        padding:30px 20px;
+        
+       }
+       
+       .form-control{
+        text-align: left;
+        margin-bottom: 8px;
+       }
+
+       .form-control label{
+        display: block;
+        margin-bottom: 3px;
+       }
+       .form-control select,
+       .form-control input, 
+       .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            
+            
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<form id = "form">
+    <div class ="form-control">
+        <label for ="name" id="label-name">
+            Name
+    </label>
+         <input  type ="text"
+                id="name"
+                placeholder="Enter Your Name"/> 
+    </div>
+    
+    
+    <div class="form-control">
+        <label for="email" id="label-email">
+            Email
+        </label>
+
+        <!-- Input Type Email-->
+        <input  type="email"
+               id="email"
+               placeholder="Enter your email" />
+    </div>
+
+    <div class="form-control">
+        <label for="age" id="label-age">
+            Age
+        </label>
+
+        <!-- Input Type Text -->
+        <input   type="text"
+               id="age"
+               placeholder="Enter your age" />
+    </div>
+
+
+    <div class ="form-control">
+        <label for="role" id ="label-role">
+            which option best describe you?
+        </label>
+
+        <select name="role" id="role">
+            <option value = "student">Student</option>
+            <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+
+        </select>
+    </div>
+     
+    <div class ="form-control">
+        <label>
+            would you recommend GeeksforGeeks to a friend?
+        </label>
+        <br>
+        <label for = "recommend-1">
+            <input type ="radio" id = "recommend-1" name = "recommend"> Yes</input>
+
+        </label>
+         <br>
+        <label for = "recommend-2">
+            <input type = "radio" id="recommend-2" name = "recommend-2"> No </input>
+
+        </label>
+         <br>
+        <label for="recommed-3">
+            <input type="radio"
+                   id="recommed-3"
+                   name="recommed">Maybe</input>
+        </label>
+
+    </div>
+    
+    <div class ="form-control">
+        
+        <label>Languages and Frameworks known
+            <small>(Check all that apply)</small>
+        </label><br>
+        <!-- Input Type Checkbox -->
+        <label for="inp-1">
+            <input type="checkbox"
+                   name="inp">C</input></label><br>
+        <label for="inp-2">
+            <input type="checkbox"
+                   name="inp">C++</input></label><br>
+        <label for="inp-3">
+            <input type="checkbox"
+                   name="inp">C#</input></label><br>
+        <label for="inp-4">
+            <input type="checkbox"
+                   name="inp">Java</input></label><br>
+        <label for="inp-5">
+            <input type="checkbox"
+                   name="inp">Python</input></label><br>
+        <label for="inp-6">
+            <input type="checkbox"
+                   name="inp">JavaScript</input></label><br>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="inp">React</input></label><br>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="inp">Angular</input></label><br>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="inp">Django</input></label><br>
+        <label for="inp-7">
+            <input type="checkbox"
+                   name="inp">Spring</input></label><br>
+
+        
+
+
+    </div>
+
+
+    <div class="form-control">
+        <label for="comment">
+            Any comments or suggestions
+        </label>
+
+        <!-- multi-line text input control -->
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+    </div>
+
+    <button type="submit" value="submit">
+        Submit
+    </button>
+   
+
+
+
+</form>  
+</body>
+</html>
